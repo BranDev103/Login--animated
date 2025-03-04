@@ -1,0 +1,226 @@
+:root {
+  --color-text: #FFFFFF;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: 'Brasika Display - Trial';
+  src: url('BrasikaDisplayTrial-Regular.woff2') format('woff2'),
+    url('BrasikaDisplayTrial-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url(/images/6191052.jpg);
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.login {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10, 81, 95);
+  border-radius: 50%;
+  z-index: 1;
+  top: 13%;
+}
+
+.user i {
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  position: relative;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 4em;
+  font-family: var(--font-montserrat);
+  background: rgba(126, 215, 232, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 15px;
+  gap: 1em;
+}
+
+.container h1 {
+  text-align: center;
+  color: #002430;
+  font-family: 'Brasika Display - Trial';
+  letter-spacing: 2px;
+  font-size: 3em;
+}
+
+label {
+  position: relative;
+}
+
+label input {
+  color: #000000;
+  padding: 10px 150px 10px 10px;
+  outline: 0;
+  border: 1px solid #002430;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #e6f6fc;
+}
+
+label input+span {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+}
+
+label input:focus+span,
+label input:valid+span,
+input input:active+span {
+  color: transparent;
+}
+
+button {
+  padding: 10px 80px;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #002430;
+  color: var(--color-text);
+}
+
+button:hover {
+  background-color: #004157;
+  transition: .3s;
+}
+
+p,
+a {
+  font-family: var(--font-montserrat);
+  font-size: 13px;
+  text-align: center;
+}
+
+/**************************************************************************************************************/
+
+.container_leaves {
+  position: relative;
+  /*Cambiar a relative*/
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+.leaf {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #9ac23c00;
+  border-radius: 50%;
+  animation: falling 10s ease-in-out infinite;
+}
+
+.leaf img {
+  width: 50px;
+  transform: rotate(90deg);
+}
+
+.leaf:nth-child(1) {
+  left: 5%;
+  top: -5%;
+  animation-delay: 0.5s;
+}
+
+.leaf:nth-child(2) {
+  left: 45%;
+  top: -18%;
+  animation-delay: 2s;
+}
+
+.leaf:nth-child(3) {
+  left: 17%;
+  top: -65%;
+  transform: rotate(110deg);
+  animation-delay: 3.5s;
+}
+
+.leaf:nth-child(4){
+  left: 46%;
+  top: -29%;
+  animation-delay: 2.5;
+}
+.leaf:nth-child(5)
+{
+  left: 74%;
+  top: -35%;
+  animation-delay: 2.8s;
+}
+
+.leaf:nth-child(6){
+  left: 89%;
+  top: -60%;
+  animation-delay: 1s;
+}
+.leaf:nth-child(7){
+  left: 49%;
+  top: -20%;
+  animation-delay: 5s;
+}
+
+.leaf:nth-child(8){
+  left: 99%;
+  top: -80%;
+  animation-delay: 3s;
+}
+
+.leaf:nth-child(9){
+  left: 9%;
+  top: -50%;
+  animation-delay: 2.4s;
+}
+
+
+
+
+@keyframes falling {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(4220%);
+  }
+}
