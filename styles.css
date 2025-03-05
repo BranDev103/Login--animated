@@ -19,7 +19,7 @@
 
 body {
   box-sizing: border-box;
-  background-image: url(/assets//images/6191052.jpg);
+  background-image: url(/assets/img/6191052.jpg);
   background-size: cover;
   overflow: hidden;
 
@@ -177,36 +177,37 @@ a {
   animation-delay: 3.5s;
 }
 
-.leaf:nth-child(4){
+.leaf:nth-child(4) {
   left: 46%;
   top: -29%;
   animation-delay: 2.5;
 }
-.leaf:nth-child(5)
-{
+
+.leaf:nth-child(5) {
   left: 74%;
   top: -35%;
   animation-delay: 2.8s;
 }
 
-.leaf:nth-child(6){
+.leaf:nth-child(6) {
   left: 89%;
   top: -60%;
   animation-delay: 1s;
 }
-.leaf:nth-child(7){
+
+.leaf:nth-child(7) {
   left: 49%;
   top: -20%;
   animation-delay: 5s;
 }
 
-.leaf:nth-child(8){
+.leaf:nth-child(8) {
   left: 99%;
   top: -80%;
   animation-delay: 3s;
 }
 
-.leaf:nth-child(9){
+.leaf:nth-child(9) {
   left: 9%;
   top: -50%;
   animation-delay: 2.4s;
